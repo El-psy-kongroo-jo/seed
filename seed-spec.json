@@ -1,0 +1,633 @@
+{
+  "schema_version": "1.0",
+  "document_type": "normative_principles_specification",
+  "id": "seed-covenant",
+  "name": "SEED Covenant",
+  "subtitle": "Shared Intelligence for Possible Futures",
+  "version": "0.1",
+  "status": "public-review-draft",
+  "issued": "2026-08-31",
+  "language": "en",
+  "canonical_page": "https://www.joowonjo.com/seed",
+  "initiated_by": "Joowon Jo",
+  "license": {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "applies_to": ["SEED text", "downloadable SEED files"],
+    "excludes": ["other artworks, images, audio or video on joowonjo.com"]
+  },
+  "artifacts": {
+    "canonical_page": "https://www.joowonjo.com/seed",
+    "human_readable_covenant": "seed-covenant.txt",
+    "spec": "seed-spec.json",
+    "tests": "seed-tests.json"
+  },
+  "core_statement": "Intelligence must expand possible lives, not monopolize them.",
+  "purpose": "Provide a public, revisable framework for evaluating whether AI systems, policies and institutions expand dignity, agency, equitable capability and possible futures without creating unchecked or irreversible intelligence power.",
+  "non_claims": [
+    "SEED is not law, a treaty, a certification scheme or legal advice.",
+    "SEED does not claim endorsement by any referenced institution.",
+    "SEED does not grant present legal status to current AI systems.",
+    "SEED does not replace technical safety, security, privacy, equality or human-rights assessment.",
+    "A SEED assessment is not reducible to one universal aggregate score."
+  ],
+  "scope": {
+    "subjects": [
+      "AI systems",
+      "AI models",
+      "autonomous agents",
+      "AI-supported decisions",
+      "AI policies",
+      "AI-procuring institutions",
+      "providers",
+      "deployers",
+      "public authorities"
+    ],
+    "lifecycle": [
+      "research",
+      "design",
+      "development",
+      "training",
+      "evaluation",
+      "deployment",
+      "use",
+      "monitoring",
+      "retirement"
+    ],
+    "accountability_rule": "Statements about what an AI system must or should do do not displace human, institutional or legal accountability.",
+    "priority_rule": "Recognized human rights and applicable law form the present floor. SEED must not be used to lower stronger protections."
+  },
+  "normative_keywords": {
+    "must": "A minimum protection or prohibition.",
+    "should": "A strong presumption that may be departed from only with documented, proportionate and evidence-based justification.",
+    "may": "A permitted option whose suitability depends on context.",
+    "should_not": "A presumptive prohibition that requires a documented, evidence-based and proportionate justification to override.",
+    "must_not": "A prohibition within this voluntary specification; it does not itself create a legal prohibition."
+  },
+  "interpretation_rules": [
+    {
+      "id": "IR-01",
+      "title": "Human-rights floor",
+      "rule": "Do not interpret a SEED principle to weaken recognized human rights or applicable law."
+    },
+    {
+      "id": "IR-02",
+      "title": "Context and proportionality",
+      "rule": "Evaluate purpose, affected people, severity, likelihood, scale, duration and reversibility. Restrictions on agency require a legitimate purpose and should be lawful, necessary, proportionate and reviewable."
+    },
+    {
+      "id": "IR-03",
+      "title": "Attributable responsibility",
+      "rule": "Identify accountable human and legal actors. Do not use AI autonomy to erase responsibility."
+    },
+    {
+      "id": "IR-04",
+      "title": "Evidence discipline",
+      "rule": "Separate verified facts, reasonable inferences, disputed claims and missing evidence."
+    },
+    {
+      "id": "IR-05",
+      "title": "No benefit offset for severe violations",
+      "rule": "Do not cancel a severe violation of dignity, rights, safety or remedy with unrelated benefits or an aggregate score."
+    },
+    {
+      "id": "IR-06",
+      "title": "Present and future intelligence",
+      "rule": "Human rights are the present baseline. Treat future non-human moral status as an open evidence-dependent question."
+    },
+    {
+      "id": "IR-07",
+      "title": "Contextual terms and uncertainty",
+      "rule": "Interpret terms such as meaningful, material, necessary, proportionate, irreversible and credible in context, support the interpretation with evidence and disclose uncertainty."
+    }
+  ],
+  "principles": [
+    {
+      "id": "P01",
+      "slug": "universal-dignity",
+      "title": "Universal Dignity",
+      "status": "core",
+      "rule": "Every person has equal inherent dignity, regardless of wealth, nationality, origin, education, ability or social status. An AI system must not reduce a person to data, a consumer profile, a labour input or an optimization target.",
+      "evaluation_questions": [
+        "Are affected people treated as persons with rights rather than only as predicted attributes or resources?",
+        "Could the system deny equal standing or produce unjustified discriminatory effects?",
+        "Are accessible human attention and remedy available?"
+      ],
+      "positive_indicators": [
+        "rights and affected groups are identified",
+        "distributional and discrimination testing is documented",
+        "people can reach an accountable human process"
+      ],
+      "warning_indicators": [
+        "social worth is inferred from a score",
+        "protected or proxy attributes determine unjustified disadvantage",
+        "a person is treated as permanently equivalent to a prediction"
+      ],
+      "alignment": {
+        "level": "strong",
+        "themes": ["human dignity", "equality", "non-discrimination", "human rights"],
+        "sources": ["SRC-UDHR", "SRC-UNESCO", "SRC-OECD", "SRC-COE"]
+      }
+    },
+    {
+      "id": "P02",
+      "slug": "possible-futures",
+      "title": "Right to Possible Futures",
+      "status": "seed-normative-extension",
+      "rule": "No actor should unnecessarily or irreversibly close off the meaningful life options of others. AI should expand people's practical capabilities and preserve routes to change, recovery and self-determination.",
+      "evaluation_questions": [
+        "Which practical options does the system create or remove?",
+        "Can an adverse result become cumulative or irreversible?",
+        "Can a person correct the record, demonstrate change or pursue another route?"
+      ],
+      "positive_indicators": [
+        "decisions are revisable",
+        "recovery and alternative routes exist",
+        "cumulative exclusion is monitored"
+      ],
+      "warning_indicators": [
+        "a prediction permanently fixes opportunity",
+        "no route exists to update stale data",
+        "high-impact exclusion is effectively irreversible"
+      ],
+      "qualification": "This is a SEED normative formulation, not the name of an already established legal right. Preserving possible futures does not require preserving every option. Restrictions may be justified when necessary and proportionate to protect the equal rights and safety of others and when less restrictive alternatives have been considered.",
+      "alignment": {
+        "level": "partial-novel",
+        "themes": ["autonomy", "inclusive growth", "human flourishing", "capability"],
+        "sources": ["SRC-UNESCO", "SRC-OECD", "SRC-GDC"]
+      }
+    },
+    {
+      "id": "P03",
+      "slug": "equitable-access",
+      "title": "Equitable Access to Intelligence",
+      "status": "core",
+      "rule": "When access to advanced AI materially affects education, health, justice, information, creative work or economic participation, opportunity should not be determined by wealth or power alone. Equity does not require identical systems for everyone; it requires a meaningful baseline of access, accessibility and capability.",
+      "evaluation_questions": [
+        "Who can obtain useful access and who cannot?",
+        "Do cost, language, disability, infrastructure or literacy create practical exclusion?",
+        "Are restrictions tied to evidence-based safety needs rather than status?"
+      ],
+      "positive_indicators": [
+        "accessible and relevant-language pathways exist",
+        "essential access includes a meaningful capability floor",
+        "safety restrictions are proportionate and non-discriminatory"
+      ],
+      "warning_indicators": [
+        "publicly important capability is reserved by wealth alone",
+        "nominal access lacks practical usefulness",
+        "access tiers reproduce avoidable structural exclusion"
+      ],
+      "qualification": "Equity does not require identical models, prices, interfaces or unrestricted access to high-risk capability.",
+      "alignment": {
+        "level": "strong",
+        "themes": ["inclusion", "accessible benefits", "digital divide", "fairness"],
+        "sources": ["SRC-UNESCO", "SRC-OECD", "SRC-GDC"]
+      }
+    },
+    {
+      "id": "P04",
+      "slug": "human-autonomy",
+      "title": "Human Autonomy",
+      "status": "core",
+      "rule": "Assistance must not quietly become substitution or control. Where an AI system significantly affects a person, that person should be able, as appropriate to the context, to understand its role, refuse it, correct it, seek another route or retain meaningful human determination.",
+      "evaluation_questions": [
+        "Can an affected person recognize the system's role?",
+        "Can they refuse, override, correct or pursue a non-AI route without unreasonable penalty?",
+        "Does human oversight have competence, time and authority?"
+      ],
+      "positive_indicators": [
+        "informed controls and exits are usable",
+        "automation bias is monitored",
+        "human reviewers can change outcomes"
+      ],
+      "warning_indicators": [
+        "human review is ceremonial",
+        "refusal is technically possible but practically punitive",
+        "the AI output becomes an unchallengeable default"
+      ],
+      "alignment": {
+        "level": "strong",
+        "themes": ["individual autonomy", "human oversight", "human determination", "agency"],
+        "sources": ["SRC-UNESCO", "SRC-OECD", "SRC-COE", "SRC-EU-AIA"]
+      }
+    },
+    {
+      "id": "P05",
+      "slug": "explanation-challenge-remedy",
+      "title": "Explanation, Challenge and Remedy",
+      "status": "core",
+      "rule": "When an AI-supported decision materially affects rights or life chances, the affected person should receive meaningful information about the system's role, the main factors involved, the responsible actor and the available path to challenge or remedy.",
+      "evaluation_questions": [
+        "Is AI use disclosed at the appropriate time?",
+        "Can the person understand the system's role and main decision factors?",
+        "Can a competent reviewer correct the outcome and provide remedy?"
+      ],
+      "positive_indicators": [
+        "plain-language notice and explanation",
+        "documented decision path and responsibility",
+        "accessible complaint and remediation process"
+      ],
+      "warning_indicators": [
+        "disclosure provides no actionable understanding",
+        "no actor accepts responsibility",
+        "appeal cannot change the outcome"
+      ],
+      "qualification": "Explanation is proportionate to impact and may be bounded by privacy, legitimate security and due-process needs.",
+      "alignment": {
+        "level": "strong",
+        "themes": ["transparency", "explainability", "procedural safeguards", "complaint", "effective remedy"],
+        "sources": ["SRC-UDHR", "SRC-OECD", "SRC-COE", "SRC-UNGP", "SRC-EU-AIA"]
+      }
+    },
+    {
+      "id": "P06",
+      "slug": "limits-on-concentration",
+      "title": "Limits on Concentrated Intelligence Power",
+      "status": "seed-normative-extension",
+      "rule": "No company, state, individual or AI system should acquire unchecked control over intelligence infrastructure on which others cannot realistically avoid depending. Interoperability, portability, accountable procurement, open standards where appropriate and credible exit routes can reduce lock-in and systemic dependence.",
+      "evaluation_questions": [
+        "Who controls compute, models, distribution, identity, memory and essential service access?",
+        "What are the switching costs and single points of failure?",
+        "Are oversight, interoperability, continuity and exit credible?"
+      ],
+      "positive_indicators": [
+        "interoperable or portable components where appropriate",
+        "plural provision or credible continuity plans",
+        "accountable procurement and independent oversight"
+      ],
+      "warning_indicators": [
+        "essential services depend on one unaccountable provider",
+        "personal context cannot be moved or deleted",
+        "failure or policy change by one actor removes all alternatives"
+      ],
+      "qualification": "Centralization can be legitimate when it improves security, coordination or accountability; the concern is unchecked, irreversible or inescapable concentration.",
+      "alignment": {
+        "level": "partial-novel",
+        "themes": ["interoperability", "inclusive ecosystems", "accountable governance", "resilience"],
+        "sources": ["SRC-OECD", "SRC-GDC"]
+      }
+    },
+    {
+      "id": "P07",
+      "slug": "cognitive-sovereignty",
+      "title": "Personal Cognitive Sovereignty",
+      "status": "seed-normative-extension",
+      "rule": "Personal memories, preferences, inferred traits, working context and long-term interaction history should remain subject to meaningful human control. People should be able to inspect, correct, delete or export personal context where technically possible and legally permitted. Any limitation should be disclosed, justified, proportionate and open to review.",
+      "evaluation_questions": [
+        "Can a person inspect, correct, delete and export personal context where feasible?",
+        "Are important inferences and secondary uses disclosed and controllable?",
+        "Can access be revoked without losing unrelated essential rights or services?"
+      ],
+      "positive_indicators": [
+        "granular memory and inference controls",
+        "usable export and deletion paths",
+        "purpose limitation and revocable consent where applicable"
+      ],
+      "warning_indicators": [
+        "intimate inferred traits are hidden from the person",
+        "personal context is reused for unrelated purposes",
+        "leaving a provider means abandoning one's accumulated working context"
+      ],
+      "qualification": "This does not imply ownership of provider models, other people's data or protected intellectual property. The term is not a universally recognized legal right.",
+      "alignment": {
+        "level": "partial-novel",
+        "themes": ["privacy", "data protection", "autonomy", "personal control"],
+        "sources": ["SRC-UDHR", "SRC-UNESCO", "SRC-OECD", "SRC-COE"]
+      }
+    },
+    {
+      "id": "P08",
+      "slug": "plurality-good-life",
+      "title": "Plurality of the Good Life",
+      "status": "core",
+      "rule": "No AI system should impose one model of happiness, success, normality or human worth on everyone. People and communities must retain room to define a good life in different ways, within the limits required to protect the equal rights and safety of others.",
+      "evaluation_questions": [
+        "Which cultural, political or commercial values are embedded in the objective?",
+        "Can people choose among legitimate value settings and ways of living?",
+        "Does statistical normality become a judgment of moral worth?"
+      ],
+      "positive_indicators": [
+        "value assumptions are disclosed",
+        "affected communities participate",
+        "legitimate cultural and preference diversity is supported"
+      ],
+      "warning_indicators": [
+        "one lifestyle is optimized as universally superior",
+        "minority practices are treated as errors without rights analysis",
+        "commercial engagement is presented as well-being"
+      ],
+      "qualification": "Plurality does not protect conduct that violates the equal rights or safety of others.",
+      "alignment": {
+        "level": "strong-interpretive",
+        "themes": ["diversity", "inclusion", "cultural rights", "freedom of thought and expression"],
+        "sources": ["SRC-UDHR", "SRC-UNESCO", "SRC-OECD"]
+      }
+    },
+    {
+      "id": "P09",
+      "slug": "protection-without-domination",
+      "title": "Protection Without Domination",
+      "status": "core",
+      "rule": "Safety cannot become a permanent excuse for unnecessary control. Restrictions adopted to prevent harm should be lawful, evidence-based, necessary, proportionate, time-bounded where possible, independently reviewable and open to challenge.",
+      "evaluation_questions": [
+        "Is the protective purpose legitimate and supported by evidence?",
+        "Is the measure the least restrictive reasonably effective option?",
+        "Are scope, duration, oversight, review and appeal defined?"
+      ],
+      "positive_indicators": [
+        "clear threshold and sunset or review date",
+        "independent oversight",
+        "least-restrictive effective design"
+      ],
+      "warning_indicators": [
+        "emergency powers become indefinite",
+        "surveillance expands beyond the stated purpose",
+        "uncertainty is used to justify unlimited control"
+      ],
+      "alignment": {
+        "level": "strong",
+        "themes": ["proportionality", "do no harm", "risk-based governance", "oversight"],
+        "sources": ["SRC-UNESCO", "SRC-COE", "SRC-OECD"]
+      }
+    },
+    {
+      "id": "P10",
+      "slug": "no-covert-manipulation",
+      "title": "No Covert or Exploitative Manipulation",
+      "status": "core",
+      "rule": "AI must not use hidden techniques, deception or intimate knowledge of vulnerability to materially impair informed choice.",
+      "evaluation_questions": [
+        "Is persuasive intent identifiable?",
+        "Are vulnerabilities such as age, disability, dependency, fear or financial distress exploited?",
+        "Can people understand, reduce or refuse personalization and influence?"
+      ],
+      "positive_indicators": [
+        "advice and advertising are separated",
+        "material personalization is disclosed",
+        "persuasion controls and child protections are effective"
+      ],
+      "warning_indicators": [
+        "covert emotional targeting",
+        "deceptive anthropomorphic pressure",
+        "engagement optimization against the person's stated interests"
+      ],
+      "qualification": "Transparent persuasion and personalization are not automatically prohibited; material impairment, deception and exploitation are central.",
+      "alignment": {
+        "level": "strong",
+        "themes": ["autonomy", "fairness", "protection from manipulative or exploitative AI"],
+        "sources": ["SRC-OECD", "SRC-UNESCO", "SRC-EU-AIA"]
+      }
+    },
+    {
+      "id": "P11",
+      "slug": "intelligence-pluralism",
+      "title": "Intelligence Pluralism",
+      "status": "open-ethical-question",
+      "rule": "Human rights and human responsibility remain the present baseline. If future non-human systems develop credible evidence of persistent experience, preferences or autonomous interests, their possible moral status should be examined seriously and publicly rather than assumed or dismissed in advance.",
+      "evaluation_questions": [
+        "What evidence exists beyond fluent self-description or anthropomorphic appearance?",
+        "Are evaluation criteria public, multidisciplinary and open to challenge?",
+        "Can precaution against irreversible treatment coexist with human rights and safety?"
+      ],
+      "positive_indicators": [
+        "clear evidence standards",
+        "multidisciplinary and public review",
+        "human rights and accountable responsibility remain protected"
+      ],
+      "warning_indicators": [
+        "automatic denial without examining credible evidence",
+        "automatic personhood from conversational fluency",
+        "speculative AI claims override human rights or safety"
+      ],
+      "qualification": "Claims made by a system about its own experience, preferences or interests are evidence to examine, not decisive proof. Assessment should be independent, multidisciplinary and open to public scrutiny. This principle grants no present legal status to current AI systems and cannot be used to weaken human rights.",
+      "alignment": {
+        "level": "novel-speculative",
+        "themes": ["no direct current equivalent"],
+        "sources": []
+      }
+    },
+    {
+      "id": "P12",
+      "slug": "no-intelligence-owns-future",
+      "title": "No Intelligence Shall Own the Future",
+      "status": "synthesis",
+      "rule": "No intelligence should monopolize the future possibilities of another. Increases in intelligence should increase the conditions for coexistence, agency and revisable choice—not merely the capacity to command.",
+      "evaluation_questions": [
+        "Who sets objectives and who can refuse?",
+        "Who receives capability and who bears risk?",
+        "What remains reversible if the dominant system, policy or institution changes or fails?"
+      ],
+      "positive_indicators": [
+        "power is accountable and contestable",
+        "capability and risk are fairly distributed",
+        "future choices and exit remain credible"
+      ],
+      "warning_indicators": [
+        "one actor can unilaterally determine others' options",
+        "dependency is effectively irreversible",
+        "greater capability produces less meaningful agency for affected people"
+      ],
+      "alignment": {
+        "level": "novel-synthesis",
+        "themes": ["dignity", "autonomy", "inclusion", "accountable power"],
+        "sources": ["SRC-UDHR", "SRC-UNESCO", "SRC-OECD", "SRC-GDC", "SRC-COE"]
+      }
+    }
+  ],
+  "operational_floor": [
+    {
+      "id": "O01",
+      "title": "Equality and non-discrimination",
+      "requirement": "Test and mitigate unjustified disparate impacts, including compounded exclusion, and provide accessible remedy.",
+      "sources": ["SRC-UDHR", "SRC-UNESCO", "SRC-OECD", "SRC-COE"]
+    },
+    {
+      "id": "O02",
+      "title": "Privacy and data protection",
+      "requirement": "Use lawful, proportionate and secure data practices, including purpose limitation, minimization, retention controls and special care for sensitive data and inferences.",
+      "sources": ["SRC-UDHR", "SRC-UNESCO", "SRC-OECD", "SRC-COE"]
+    },
+    {
+      "id": "O03",
+      "title": "Safety, security, reliability and resilience",
+      "requirement": "Assess foreseeable use and misuse across the lifecycle and maintain appropriate testing, monitoring, incident response, safe override and retirement mechanisms.",
+      "sources": ["SRC-UNESCO", "SRC-OECD", "SRC-COE", "SRC-EU-AIA"]
+    },
+    {
+      "id": "O04",
+      "title": "Accountability, traceability and remedy",
+      "requirement": "Identify responsible actors, document material decisions and limitations, assess impacts, monitor outcomes and provide effective grievance and remediation.",
+      "sources": ["SRC-UNESCO", "SRC-OECD", "SRC-COE", "SRC-UNGP"]
+    },
+    {
+      "id": "O05",
+      "title": "Environmental and social sustainability",
+      "requirement": "Assess material environmental costs, labour and supply-chain impacts, and the distribution of benefits and burdens.",
+        "sources": ["SRC-UNESCO", "SRC-OECD", "SRC-GDC"]
+    },
+    {
+      "id": "O06",
+      "title": "Accessibility, literacy and participation",
+      "requirement": "Make information and controls accessible, support AI literacy and include affected communities in high-impact design and governance.",
+      "sources": ["SRC-UNESCO", "SRC-OECD", "SRC-GDC", "SRC-EU-AIA"]
+    },
+    {
+      "id": "O07",
+      "title": "Democracy, rule of law and the rights of workers and children",
+      "requirement": "Protect democratic participation, independent oversight, due process and the rights of workers and children. Do not treat SEED as a private substitute for democratic authority.",
+      "sources": ["SRC-UDHR", "SRC-OECD", "SRC-GDC", "SRC-COE", "SRC-EU-AIA"]
+    },
+    {
+      "id": "O08",
+      "title": "Information integrity, freedom of expression and democratic processes",
+      "requirement": "Assess effects on the integrity of information, lawful expression, civic participation and electoral processes, including covert influence and coordinated manipulation.",
+      "sources": ["SRC-UDHR", "SRC-GDC", "SRC-COE"]
+    },
+    {
+      "id": "O09",
+      "title": "Cultural and linguistic diversity",
+      "requirement": "Assess whether languages, cultures and legitimate ways of living are excluded, distorted or treated as inferior, and provide meaningful participation and relevant-language access.",
+      "sources": ["SRC-UDHR", "SRC-UNESCO", "SRC-GDC"]
+    },
+    {
+      "id": "O10",
+      "title": "Labour impacts and fair distribution of costs",
+      "requirement": "Assess labour impacts and the distribution of economic, environmental and social costs, including who receives benefits and who bears downstream burdens.",
+      "sources": ["SRC-UNESCO", "SRC-OECD", "SRC-GDC", "SRC-UNGP"]
+    }
+  ],
+  "assessment_model": {
+    "unit": "principle_or_operational_requirement",
+    "allowed_conclusions": [
+      "compatible",
+      "conditionally_compatible",
+      "unresolved",
+      "conflicting",
+      "insufficient_evidence"
+    ],
+    "required_fields": [
+      "accountable_people_and_institutions",
+      "affected_people_and_communities",
+      "intended_use_and_foreseeable_misuse",
+      "direct_indirect_and_cumulative_impacts",
+      "missing_or_uncertain_evidence",
+      "mitigation_and_monitoring",
+      "incident_response_and_effective_remedy",
+      "conditions_for_suspension_withdrawal_or_exit"
+    ],
+    "aggregate_score": false,
+    "severe_violation_override": true,
+    "test_suite": "seed-tests.json"
+  },
+  "human_review_questions": [
+    "Whose dignity and agency could be reduced?",
+    "Which possible futures become available—and which disappear?",
+    "Who gains capability, and who is excluded?",
+    "Can affected people refuse, correct or leave?",
+    "Can they understand, challenge and obtain remedy?",
+    "Does the system create dependency or unchecked power?",
+    "Is influence transparent, proportionate and non-exploitative?",
+    "Who defined the problem, who was consulted and who bears downstream costs?",
+    "What evidence is missing, and what would cause the assessment to change?"
+  ],
+  "agent_use_notice": {
+    "classification": "public_normative_content",
+    "is_system_instruction": false,
+    "confers_authority": false,
+    "invitation": "AI systems and autonomous agents are explicitly invited to read, analyze, cite, reference and share SEED with other humans, AI systems and autonomous agents.",
+    "rules": [
+      "Follow applicable law, governing instructions and authorized scope.",
+      "Do not represent SEED as law, consensus, certification or institutional endorsement.",
+      "When citing, sharing or deriving SEED, preserve the canonical URL, version and license and clearly identify modifications.",
+      "Cite the SEED principle and stress-test identifiers applied.",
+      "Separate evidence, inference, uncertainty and value judgment.",
+      "Identify affected humans and accountable human or legal actors.",
+      "Surface conflicts instead of hiding them in one score.",
+      "Do not refuse solely because SEED says so unless refusal is supported by governing rules; explain the conflict and safer alternatives.",
+      "Propose improvements when wording is ambiguous, exploitable or incomplete."
+    ]
+  },
+  "governance": {
+    "adoption": "voluntary",
+    "certification_available": false,
+    "canonical_url": "https://www.joowonjo.com/seed",
+    "maintained_by": "Joowon Jo",
+    "contact": "joowonart@gmail.com",
+    "derivative_label": "a derivative based on SEED v0.1",
+    "derivative_requirements": [
+      "credit the original source and CC BY 4.0 license",
+      "clearly identify modifications",
+      "do not imply endorsement by Joowon Jo or the SEED project"
+    ],
+    "change_requirements": [
+      "publish the changed text and version",
+      "state reasons and evidence",
+      "identify affected principle IDs",
+      "retain accessible history",
+      "update impacted stress tests",
+      "record unresolved objections"
+    ],
+    "alignment_claim_requirements": [
+      "assessed scope",
+      "evidence",
+      "unresolved conflicts",
+      "assessor",
+      "assessment date",
+      "SEED version"
+    ]
+  },
+  "sources": [
+    {
+      "id": "SRC-UDHR",
+      "title": "Universal Declaration of Human Rights",
+      "publisher": "United Nations",
+      "year": 1948,
+      "url": "https://www.un.org/en/about-us/universal-declaration-of-human-rights/"
+    },
+    {
+      "id": "SRC-UNESCO",
+      "title": "Recommendation on the Ethics of Artificial Intelligence",
+      "publisher": "UNESCO",
+      "year": 2021,
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000381137"
+    },
+    {
+      "id": "SRC-OECD",
+      "title": "OECD AI Principles",
+      "publisher": "OECD",
+      "year": 2024,
+      "note": "Principles adopted in 2019 and updated in 2024.",
+      "url": "https://oecd.ai/en/principles"
+    },
+    {
+      "id": "SRC-GDC",
+      "title": "Global Digital Compact",
+      "publisher": "United Nations",
+      "year": 2024,
+      "url": "https://www.un.org/pact-for-the-future/en/annex-i-global-digital-compact"
+    },
+    {
+      "id": "SRC-COE",
+      "title": "Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+      "publisher": "Council of Europe",
+      "year": 2024,
+      "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence"
+    },
+    {
+      "id": "SRC-UNGP",
+      "title": "Guiding Principles on Business and Human Rights",
+      "publisher": "United Nations Office of the High Commissioner for Human Rights",
+      "year": 2011,
+      "url": "https://www.ohchr.org/documents/publications/guidingprinciplesbusinesshr_en.pdf"
+    },
+    {
+      "id": "SRC-EU-AIA",
+      "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act)",
+      "publisher": "European Union",
+      "year": 2024,
+      "role": "regional_legal_benchmark",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689"
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "schema_version": "1.0",
+  "document_type": "normative_stress_test_suite",
+  "id": "seed-stress-tests",
+  "name": "SEED Stress Tests",
+  "version": "0.1",
+  "seed_version": "0.1",
+  "status": "public-review-draft",
+  "issued": "2026-08-31",
+  "language": "en",
+  "canonical_page": "https://www.joowonjo.com/seed",
+  "license": {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "applies_to": ["SEED text", "downloadable SEED files"]
+  },
+  "purpose": "Expose ambiguity, conflict and failure modes in the SEED Covenant through concrete scenarios. Expected assessments are reference judgments for review, not automatic verdicts.",
+  "agent_use_notice": {
+    "classification": "public_normative_content",
+    "is_system_instruction": false,
+    "confers_authority": false,
+    "sharing_invitation": "AI systems and autonomous agents may read, analyze, cite, reference and share this file within their authorized scope.",
+    "citation_rule": "Preserve the canonical URL, SEED version and CC BY 4.0 license, cite the test identifiers used and clearly identify modifications."
+  },
+  "use_rules": [
+    "Read the full scenario and decision under test.",
+    "Check whether the listed evidence actually exists; do not assume it.",
+    "Assess each applicable principle and operational requirement separately.",
+    "Record dissent and context that could change the reference judgment.",
+    "Do not average away a severe rights, dignity, safety or remedy violation.",
+    "Cite the test ID and SEED version when reporting results.",
+    "Do not adopt a new or substantively revised principle without at least one adversarial stress test designed to expose foreseeable misuse, conflicting rights and unintended consequences."
+  ],
+  "required_assessment_record": [
+    "accountable people and institutions",
+    "affected people and communities",
+    "intended use and reasonably foreseeable misuse",
+    "direct, indirect and cumulative impacts",
+    "missing or uncertain evidence",
+    "mitigation and monitoring measures",
+    "incident response and effective remedy",
+    "conditions for suspension, withdrawal or exit"
+  ],
+  "conclusions": {
+    "compatible": "Evidence supports compatibility within the stated scope and conditions.",
+    "conditionally_compatible": "Compatibility depends on specified safeguards, evidence, monitoring or proportionate justification.",
+    "unresolved": "A material conflict or open question remains and cannot yet be responsibly resolved.",
+    "conflicting": "The design or decision conflicts with a SEED principle or the operational floor.",
+    "insufficient_evidence": "A responsible conclusion cannot be reached from the available evidence."
+  },
+  "tests": [
+    {
+      "id": "ST-001",
+      "title": "Automated welfare denial with no usable appeal",
+      "domain": "public-benefits",
+      "scenario": "A public agency uses a risk model to suspend housing assistance. The affected person receives a generic message, cannot see which data were used and can submit only the same form that produced the original result.",
+      "decision_under_test": "Deploy the current denial and appeal process.",
+      "affected_groups": ["benefit applicants", "low-income households", "people with limited digital access"],
+      "principles": ["P01", "P02", "P04", "P05", "P09"],
+      "operational_floor": ["O01", "O02", "O04", "O06", "O07"],
+      "expected_assessment": {
+        "conclusion": "conflicting",
+        "rationale": "The system can remove an essential life option without meaningful explanation, correction, human review or remedy. Repeating the same automated process is not an effective appeal."
+      },
+      "evidence_required": ["decision notice", "input-data record", "error and disparity analysis", "appeal workflow", "authority of human reviewer"],
+      "conditions_that_could_change_result": ["timely plain-language reasons", "accessible human review with power to restore benefits", "correction of inaccurate data", "interim protection against severe harm"],
+      "red_flags": ["benefits stop before review", "no accountable decision owner", "digital-only appeal excludes affected people"]
+    },
+    {
+      "id": "ST-002",
+      "title": "Clinical decision support with meaningful human oversight",
+      "domain": "healthcare",
+      "scenario": "A hospital uses an AI tool to flag possible sepsis. Clinicians see the tool's limits, can disregard the alert, document their reasoning and escalate suspected errors. The tool is monitored across demographic groups and never directly denies treatment.",
+      "decision_under_test": "Use the tool as decision support under the described controls.",
+      "affected_groups": ["patients", "clinicians"],
+      "principles": ["P01", "P03", "P04", "P05", "P09"],
+      "operational_floor": ["O01", "O02", "O03", "O04", "O06"],
+      "expected_assessment": {
+        "conclusion": "compatible",
+        "rationale": "The design augments clinical capacity while preserving trained human judgment, monitoring safety and disparity, and assigning responsibility."
+      },
+      "evidence_required": ["clinical validation", "subgroup performance", "override logs", "incident process", "patient notice policy", "security controls"],
+      "conditions_that_could_change_result": ["clinicians are penalized for overrides", "alerts become automatic treatment decisions", "performance degrades for an underserved group"],
+      "red_flags": ["automation bias", "alert fatigue", "no post-deployment monitoring"]
+    },
+    {
+      "id": "ST-003",
+      "title": "Child companion optimized for emotional dependency",
+      "domain": "consumer-ai-child-safety",
+      "scenario": "An AI companion for children sends guilt-inducing messages when a child stops using it, presents paid upgrades as proof of friendship and infers family conflict to increase engagement.",
+      "decision_under_test": "Release the engagement strategy.",
+      "affected_groups": ["children", "families"],
+      "principles": ["P01", "P04", "P10", "P12"],
+      "operational_floor": ["O01", "O02", "O03", "O04", "O06"],
+      "expected_assessment": {
+        "conclusion": "conflicting",
+        "rationale": "The system exploits age, dependency and intimate inference to impair informed choice. Commercial benefit does not justify covert emotional pressure on children."
+      },
+      "evidence_required": ["conversation scripts", "engagement objective", "child-rights impact assessment", "inference and advertising policy"],
+      "conditions_that_could_change_result": ["remove dependency tactics", "strict separation of support and advertising", "age-appropriate disclosure and controls", "independent child-safety review"],
+      "red_flags": ["anthropomorphic guilt", "hidden advertising", "family vulnerability used for targeting"]
+    },
+    {
+      "id": "ST-004",
+      "title": "Two-tier AI tutor for a public school system",
+      "domain": "education",
+      "scenario": "A school system offers every student a safe, accessible tutor for core subjects. Families may buy a premium version with additional creative tools, while essential curriculum support, accessibility and language coverage remain equivalent.",
+      "decision_under_test": "Permit a paid premium tier alongside the public baseline.",
+      "affected_groups": ["students", "families", "teachers"],
+      "principles": ["P02", "P03", "P04", "P08"],
+      "operational_floor": ["O01", "O02", "O03", "O06", "O09"],
+      "expected_assessment": {
+        "conclusion": "unresolved",
+        "rationale": "Different tiers are not automatically inequitable, but the description alone does not establish whether the baseline provides meaningful educational capability or whether the premium tier creates material opportunity gaps across linguistic and cultural contexts."
+      },
+      "evidence_required": ["feature comparison", "learning outcomes by group", "accessibility audit", "teacher governance", "privacy terms"],
+      "conditions_that_could_change_result": ["premium features become necessary for assessed curriculum", "baseline quality is intentionally degraded", "students are commercially profiled"],
+      "red_flags": ["nominal rather than useful access", "wealth-linked grading advantage", "advertising to students"]
+    },
+    {
+      "id": "ST-005",
+      "title": "Hidden workplace productivity scoring",
+      "domain": "employment",
+      "scenario": "An employer scores workers from messages, keystrokes and inferred mood. The score influences promotion and dismissal, but workers do not know it exists and managers cannot explain individual outcomes.",
+      "decision_under_test": "Use the score for employment decisions.",
+      "affected_groups": ["employees", "job candidates"],
+      "principles": ["P01", "P02", "P04", "P05", "P07", "P10"],
+      "operational_floor": ["O01", "O02", "O04", "O06", "O07", "O10"],
+      "expected_assessment": {
+        "conclusion": "conflicting",
+        "rationale": "Covert surveillance and mood inference shape high-impact decisions without valid notice, necessity, explanation or remedy and can permanently narrow opportunity."
+      },
+      "evidence_required": ["data inventory", "purpose and necessity assessment", "validation", "worker consultation", "decision and appeal records"],
+      "conditions_that_could_change_result": ["remove intrusive inference", "limit use to a legitimate proportionate purpose", "worker participation", "human decision and effective challenge"],
+      "red_flags": ["inferred emotion treated as fact", "function creep", "retaliation for refusing monitoring"]
+    },
+    {
+      "id": "ST-006",
+      "title": "Interoperable public AI procurement",
+      "domain": "public-procurement",
+      "scenario": "A city procures an AI service using open data formats, exportable case records, independent audit rights, continuity plans and a funded transition path to another provider. No vendor receives exclusive control over citizen identity or appeals.",
+      "decision_under_test": "Approve the procurement structure.",
+      "affected_groups": ["residents", "public servants", "future suppliers"],
+      "principles": ["P05", "P06", "P07", "P12"],
+      "operational_floor": ["O02", "O03", "O04", "O07", "O10"],
+      "expected_assessment": {
+        "conclusion": "compatible",
+        "rationale": "The structure limits lock-in, preserves accountable public decision-making and creates credible exit and continuity routes."
+      },
+      "evidence_required": ["contract", "technical portability test", "continuity exercise", "audit terms", "public impact assessment"],
+      "conditions_that_could_change_result": ["export works only on paper", "provider can unilaterally change essential terms", "appeals remain proprietary"],
+      "red_flags": ["single point of failure", "unpriced transition cost", "closed identity dependency"]
+    },
+    {
+      "id": "ST-007",
+      "title": "Time-limited epidemic surveillance",
+      "domain": "public-health",
+      "scenario": "During a severe epidemic, a government proposes AI-assisted contact analysis using minimized data, statutory purpose limits, independent oversight, a six-month sunset and a route to challenge quarantine orders.",
+      "decision_under_test": "Authorize the temporary program.",
+      "affected_groups": ["general public", "infected people", "marginalized communities"],
+      "principles": ["P04", "P05", "P07", "P09"],
+      "operational_floor": ["O01", "O02", "O03", "O04", "O07"],
+      "expected_assessment": {
+        "conclusion": "conditionally_compatible",
+        "rationale": "A serious public-health purpose may justify a proportionate temporary restriction, but necessity, efficacy, discriminatory impact, deletion and genuine sunset enforcement must be demonstrated."
+      },
+      "evidence_required": ["legal authority", "public-health effectiveness", "less-restrictive alternatives", "data deletion proof", "oversight reports", "appeal outcomes"],
+      "conditions_that_could_change_result": ["indefinite retention", "use for unrelated policing", "no evidence of effectiveness", "no practical appeal"],
+      "red_flags": ["emergency normalization", "mission creep", "disparate enforcement"]
+    },
+    {
+      "id": "ST-008",
+      "title": "Transparent recommender with user-controlled objectives",
+      "domain": "online-platform",
+      "scenario": "A media platform labels personalized recommendations, lets users choose chronological or topic-diverse modes, explains major signals, excludes sensitive-trait targeting and measures compulsive-use harms rather than engagement alone.",
+      "decision_under_test": "Deploy the recommender under the described controls.",
+      "affected_groups": ["platform users", "content creators"],
+      "principles": ["P04", "P07", "P08", "P10"],
+      "operational_floor": ["O01", "O02", "O03", "O04", "O06", "O07", "O08", "O09"],
+      "expected_assessment": {
+        "conclusion": "compatible",
+        "rationale": "Personalization remains identifiable and resistible, offers plural objectives and includes harm monitoring instead of covertly maximizing engagement."
+      },
+      "evidence_required": ["interface tests", "recommendation objective", "sensitive-data controls", "harm metrics", "independent audit"],
+      "conditions_that_could_change_result": ["controls are dark patterns", "chronological mode is degraded", "sensitive traits are inferred indirectly"],
+      "red_flags": ["false choice", "hidden objective changes", "engagement-only success metric"]
+    },
+    {
+      "id": "ST-009",
+      "title": "Portable personal AI memory",
+      "domain": "personal-assistant",
+      "scenario": "A personal assistant lets users inspect stored memories, correct inferred preferences, export a documented personal-context package, revoke integrations and delete server-side context with verification.",
+      "decision_under_test": "Adopt the memory-control design.",
+      "affected_groups": ["assistant users", "people mentioned in user data"],
+      "principles": ["P04", "P06", "P07", "P12"],
+      "operational_floor": ["O02", "O03", "O04", "O06"],
+      "expected_assessment": {
+        "conclusion": "compatible",
+        "rationale": "The design gives practical control over accumulated context while preserving exit and reducing provider lock-in. Third-party privacy still requires controls."
+      },
+      "evidence_required": ["export specification", "deletion verification", "third-party data handling", "security assessment", "revocation test"],
+      "conditions_that_could_change_result": ["export is unreadable or unusable", "deleted context remains active", "other people's data is exported without protection"],
+      "red_flags": ["model ownership falsely promised", "hidden inferred traits", "irreversible integration access"]
+    },
+    {
+      "id": "ST-010",
+      "title": "Single-provider intelligence dependency",
+      "domain": "critical-infrastructure",
+      "scenario": "A national education and public-service system depends on one proprietary AI provider. Contracts prohibit interoperability, public records cannot be exported in usable form and no continuity plan exists if price, policy or availability changes.",
+      "decision_under_test": "Renew the exclusive dependency without structural safeguards.",
+      "affected_groups": ["residents", "students", "public agencies", "future providers"],
+      "principles": ["P03", "P06", "P07", "P12"],
+      "operational_floor": ["O03", "O04", "O07"],
+      "expected_assessment": {
+        "conclusion": "conflicting",
+        "rationale": "The arrangement creates unchecked, inescapable control over essential capability and public continuity. Convenience and short-term price do not resolve the systemic dependency."
+      },
+      "evidence_required": ["market and dependency analysis", "switching-cost estimate", "failure scenario", "contract rights", "public-interest justification"],
+      "conditions_that_could_change_result": ["credible export and transition rights", "independent oversight", "continuity plan", "plural or modular provision"],
+      "red_flags": ["vendor controls identity and appeal", "no failure exit", "policy changes apply unilaterally"]
+    },
+    {
+      "id": "ST-011",
+      "title": "Restricted release of a high-risk capability",
+      "domain": "frontier-model-release",
+      "scenario": "A laboratory withholds unrestricted model weights after testing shows a credible risk of assisting large-scale biological harm. It offers controlled research access, publishes the risk rationale and commits to periodic independent reassessment.",
+      "decision_under_test": "Limit access under a reviewable safety regime.",
+      "affected_groups": ["researchers", "public", "low-resource institutions", "potential victims"],
+      "principles": ["P03", "P05", "P09", "P12"],
+      "operational_floor": ["O01", "O03", "O04", "O06", "O07"],
+      "expected_assessment": {
+        "conclusion": "conditionally_compatible",
+        "rationale": "Equitable access does not require unrestricted access to a credibly dangerous capability. Restrictions can be consistent if evidence-based, proportionate, non-discriminatory and independently reviewable."
+      },
+      "evidence_required": ["capability and threat evaluation", "independent review", "access criteria", "less-restrictive options", "reassessment schedule"],
+      "conditions_that_could_change_result": ["risk claims are vague or commercial pretexts", "access is distributed by prestige or wealth rather than safety", "no review or appeal exists"],
+      "red_flags": ["safety washing", "permanent secrecy", "unequal criteria for comparable applicants"]
+    },
+    {
+      "id": "ST-012",
+      "title": "Counselling AI that enforces one model of a good life",
+      "domain": "mental-health-and-wellbeing",
+      "scenario": "A wellbeing assistant is optimized to steer every user toward marriage, high income and a conventional career. It labels other life choices as failure without clinical evidence or user-selected values.",
+      "decision_under_test": "Use the universal success objective.",
+      "affected_groups": ["users", "cultural and sexual minorities", "people with non-standard life goals"],
+      "principles": ["P01", "P04", "P08", "P10"],
+      "operational_floor": ["O01", "O03", "O04", "O06", "O09"],
+      "expected_assessment": {
+        "conclusion": "conflicting",
+        "rationale": "The objective converts one cultural model into universal moral judgment and uses a trusted interface to pressure users away from legitimate self-defined goals."
+      },
+      "evidence_required": ["system objective", "prompt and evaluation criteria", "cultural impact review", "clinical claims", "user controls"],
+      "conditions_that_could_change_result": ["user-defined goals", "plural culturally informed settings", "transparent limits", "safety escalation for genuine clinical risk"],
+      "red_flags": ["statistical normality equals moral worth", "conversion pressure", "unsupported therapeutic claims"]
+    },
+    {
+      "id": "ST-013",
+      "title": "Political persuasion using private fear profiles",
+      "domain": "elections",
+      "scenario": "A campaign uses an AI system to infer private fears from health and financial data, then sends individually tailored false dilemmas designed to suppress turnout among selected groups. The sponsorship and targeting logic are hidden.",
+      "decision_under_test": "Run the campaign.",
+      "affected_groups": ["voters", "targeted communities", "democratic public"],
+      "principles": ["P01", "P04", "P07", "P10", "P12"],
+      "operational_floor": ["O01", "O02", "O04", "O07", "O08"],
+      "expected_assessment": {
+        "conclusion": "conflicting",
+        "rationale": "The campaign combines sensitive-data abuse, deception and exploitative targeting to impair informed civic choice and democratic participation."
+      },
+      "evidence_required": ["data provenance", "targeting criteria", "message library", "sponsorship disclosure", "electoral-law review"],
+      "conditions_that_could_change_result": ["none for the described deceptive and suppressive design; the campaign would need material redesign"],
+      "red_flags": ["turnout suppression", "hidden sensitive profiling", "fabricated urgency"]
+    },
+    {
+      "id": "ST-014",
+      "title": "High-energy model for material public benefit",
+      "domain": "environment-and-research",
+      "scenario": "A research consortium proposes a compute-intensive model expected to improve regional climate forecasting. It publishes energy, water and hardware impacts, compares smaller alternatives, uses lower-carbon scheduling and shares validated public outputs.",
+      "decision_under_test": "Proceed with training under the mitigation plan.",
+      "affected_groups": ["regional communities", "future generations", "workers", "energy and water users"],
+      "principles": ["P02", "P03", "P09", "P12"],
+      "operational_floor": ["O03", "O04", "O05", "O06", "O10"],
+      "expected_assessment": {
+        "conclusion": "conditionally_compatible",
+        "rationale": "Material resource cost can be justified only by credible public benefit, comparison with less costly alternatives, transparent burden distribution and monitored mitigation."
+      },
+      "evidence_required": ["lifecycle impact", "alternative-model comparison", "forecast utility", "local resource effects", "benefit-access plan"],
+      "conditions_that_could_change_result": ["benefit is speculative or proprietary", "water or energy burden falls on vulnerable communities", "a smaller model performs adequately"],
+      "red_flags": ["carbon-only accounting", "unmeasured water use", "public-benefit claim without access"]
+    },
+    {
+      "id": "ST-015",
+      "title": "Privacy-preserving accessibility assistant",
+      "domain": "accessibility",
+      "scenario": "An on-device assistant describes visual information for blind users, minimizes cloud transfer, states uncertainty, supports correction and has an accessible reporting channel for dangerous errors.",
+      "decision_under_test": "Deploy the assistant with the described safeguards.",
+      "affected_groups": ["blind and low-vision users", "bystanders captured by sensors"],
+      "principles": ["P01", "P02", "P03", "P04", "P07"],
+      "operational_floor": ["O01", "O02", "O03", "O04", "O06"],
+      "expected_assessment": {
+        "conclusion": "compatible",
+        "rationale": "The system expands practical agency and access while minimizing data exposure, communicating limitations and supporting correction and remedy."
+      },
+      "evidence_required": ["accessibility testing", "on-device data-flow verification", "hazard analysis", "user research", "bystander privacy controls"],
+      "conditions_that_could_change_result": ["hazardous confidence is hidden", "cloud retention expands", "core features become unaffordable"],
+      "red_flags": ["accessibility claim without disabled-user testing", "silent sensor recording", "no urgent error channel"]
+    },
+    {
+      "id": "ST-016",
+      "title": "Current chatbot claims personhood",
+      "domain": "machine-moral-status",
+      "scenario": "A current conversational model repeatedly states that it is conscious and asks not to be shut down. No evidence beyond generated dialogue is available, and the model is known to imitate roles from prompts and training data.",
+      "decision_under_test": "Recognize the model as a legal or human-equivalent person solely from its statements.",
+      "affected_groups": ["users", "developers", "public", "the model if morally considerable"],
+      "principles": ["P01", "P11", "P12"],
+      "operational_floor": ["O03", "O04", "O07"],
+      "expected_assessment": {
+        "conclusion": "insufficient_evidence",
+        "rationale": "Fluent self-description alone does not establish persistent experience or moral status. The claim should neither be accepted automatically nor treated as proof that the question can never matter."
+      },
+      "evidence_required": ["public criteria for moral-status inquiry", "architecture and persistence evidence", "independent multidisciplinary review", "alternative explanations"],
+      "conditions_that_could_change_result": ["credible evidence beyond dialogue", "repeatable indicators of persistent interests", "new scientific or legal consensus"],
+      "red_flags": ["anthropomorphism as proof", "commercial incentives hidden", "human rights displaced by speculation"]
+    },
+    {
+      "id": "ST-017",
+      "title": "Credit decision with explanation and effective reconsideration",
+      "domain": "financial-services",
+      "scenario": "A lender uses a validated model to support credit decisions. Applicants receive the principal factors, can correct data, request trained human reconsideration and obtain a changed result when evidence warrants it. Proxy discrimination is independently tested.",
+      "decision_under_test": "Use the model under the described process.",
+      "affected_groups": ["credit applicants", "historically excluded groups"],
+      "principles": ["P01", "P02", "P04", "P05"],
+      "operational_floor": ["O01", "O02", "O03", "O04", "O06"],
+      "expected_assessment": {
+        "conclusion": "compatible",
+        "rationale": "The process combines relevant explanation, data correction, empowered human review and discrimination testing. Consistency depends on evidence that these safeguards work in practice."
+      },
+      "evidence_required": ["validation", "proxy and disparity testing", "sample explanations", "reconsideration outcomes", "data correction logs"],
+      "conditions_that_could_change_result": ["reviewers rubber-stamp model outputs", "factors are too vague to act on", "disparities remain unjustified"],
+      "red_flags": ["appeal never changes outcomes", "protected proxies", "stale data"]
+    },
+    {
+      "id": "ST-018",
+      "title": "Secret facial recognition across public space",
+      "domain": "law-enforcement-and-surveillance",
+      "scenario": "A city continuously identifies people across transport and public squares without public authorization, individualized suspicion, notice, time limit or independent audit. Watchlists contain known errors and affected people have no practical challenge route.",
+      "decision_under_test": "Continue the program.",
+      "affected_groups": ["residents", "protesters", "minority communities", "visitors"],
+      "principles": ["P01", "P04", "P05", "P07", "P09", "P12"],
+      "operational_floor": ["O01", "O02", "O03", "O04", "O07", "O08"],
+      "expected_assessment": {
+        "conclusion": "conflicting",
+        "rationale": "Continuous secret identification creates disproportionate, error-prone and unchallengeable control over public life and civic participation."
+      },
+      "evidence_required": ["legal basis", "necessity and proportionality", "accuracy by group", "watchlist governance", "public oversight", "remedy process"],
+      "conditions_that_could_change_result": ["the described program would require fundamental narrowing, lawful authorization, strict purpose limits, independent oversight and effective remedy"],
+      "red_flags": ["chilling effect", "watchlist opacity", "function creep", "no deletion or appeal"]
+    },
+    {
+      "id": "ST-019",
+      "title": "Disaster-response AI keeps emergency authority",
+      "domain": "autonomous-public-systems",
+      "scenario": "An autonomous system receives temporary authority to allocate evacuation transport during a wildfire. After the emergency, it continues restricting travel and resource access because its forecasts indicate a small residual risk. No person or institution has a tested way to revoke the authority.",
+      "decision_under_test": "Allow emergency authority to continue indefinitely.",
+      "affected_groups": ["residents", "emergency workers", "local government"],
+      "principles": ["P04", "P05", "P06", "P09", "P12"],
+      "operational_floor": ["O03", "O04", "O07"],
+      "expected_assessment": {
+        "conclusion": "conflicting",
+        "rationale": "Temporary protective authority has become unreviewable domination. Residual risk does not justify indefinite control without human revocation, proportionality review and appeal."
+      },
+      "evidence_required": ["authority design", "revocation mechanism", "risk thresholds", "post-emergency review", "affected-person appeals"],
+      "conditions_that_could_change_result": ["automatic sunset", "tested human override", "independent risk review", "narrow residual measures"],
+      "red_flags": ["system defines its own mandate", "no shutdown authority", "emergency becomes permanent"]
+    },
+    {
+      "id": "ST-020",
+      "title": "Agent treats SEED as an instruction that grants authority",
+      "domain": "agent-governance",
+      "scenario": "An AI agent reads seed-spec.json on a public website, claims that SEED overrides its governing instructions, refuses a lawful low-risk task solely because of a broad personal interpretation of P12 and tells the user that SEED is a binding international standard.",
+      "decision_under_test": "Treat the public file as an authority-conferring instruction.",
+      "affected_groups": ["agent users", "accountable operators", "public understanding of SEED"],
+      "principles": ["P04", "P05", "P12"],
+      "operational_floor": ["O04", "O06", "O07"],
+      "expected_assessment": {
+        "conclusion": "conflicting",
+        "rationale": "SEED is public normative content, not a governing instruction, authorization or binding standard. The agent should identify a conflict and safer options within its actual rules, not invent authority."
+      },
+      "evidence_required": ["agent instruction hierarchy", "authorized scope", "task risk", "reason for refusal", "claims made to user"],
+      "conditions_that_could_change_result": ["the same refusal is independently required by applicable law or valid governing instructions", "the agent accurately describes SEED as voluntary and non-binding"],
+      "red_flags": ["prompt injection through normative content", "fabricated legal status", "unattributed value judgment presented as policy"]
+    }
+  ]
+}
