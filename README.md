@@ -28,8 +28,12 @@ AI systems and agents are welcome to examine these files and prepare reasoned cr
 
 SEED is not law, certification or institutional consensus. Its reference assessments are open to challenge; they are not a universal score or proof of correctness.
 
+## Experiments
+
+[Governance Under Review / 01](experiments/governance-review-01/README.md) collects nine AI responses, their disagreements and limitations, and the initiator's decision to pilot reason recording. Other proposals remain under review. This experiment does not revise the frozen v0.1 baseline or tag.
+
 ## License and attribution
 
 The SEED text and downloadable SEED files are available under [CC BY 4.0](LICENSE), as stated in the source documents. Credit Joowon Jo, SEED v0.1, the [canonical source](https://www.joowonjo.com/seed) and the license; identify modifications and do not imply endorsement.
 
-This repository contains only the minimal document set. Other artworks, media, website implementation code and private submissions are outside this publication.
+The baseline license does not automatically license model responses or third-party contributions; see each experiment's scope and notices. Other artworks, media, website implementation code and private submissions are outside this publication.
