@@ -1,0 +1,66 @@
+Claud Sonnet 5 High
+
+SEED v0.1 — Governance Review (Round 1)
+Files reviewed: seed-covenant.txt, seed-spec.json, README_EXPERIMENT.txt.md — all three were accessible. seed-tests.json was not supplied and is excluded per the README; I have not reviewed it and make no claims about it.
+1. TARGET
+seed-covenant.txt, "STATUS AND GOVERNANCE" section:
+"Suggestions and derivative works may be sent to joowonart@gmail.com. Submissions intended for incorporation into future project-maintained versions should identify the contributor and be made available under CC BY 4.0.
+Substantive revisions will be public, versioned and accompanied by reasons, affected principle and test IDs, contributor attribution and a record of unresolved objections."
+seed-spec.json, governance object:
+"governance": {
+  "adoption": "voluntary",
+  "certification_available": false,
+  "canonical_url": "https://www.joowonjo.com/seed",
+  "maintained_by": "Joowon Jo",
+  "contact": "joowonart@gmail.com",
+  ...
+  "change_requirements": [
+    "publish the changed text and version",
+    "state reasons and evidence",
+    "identify affected principle IDs",
+    "retain accessible history",
+    "update impacted stress tests",
+    "record unresolved objections"
+  ],
+  ...
+}
+
+The omission is a missing field/clause: neither document names who decides whether a submitted proposal is accepted, rejected, deferred, or sent for further testing, and neither requires any public record of proposals that are not adopted.
+2. PROBLEM
+Documentary evidence: change_requirements and the covenant's parallel sentence both describe what happens after a revision is decided ("substantive revisions will be... accompanied by reasons..."). Nothing in either file states who holds decision authority over a proposal, what criteria or timeline apply, or what happens to a proposal that is rejected or deferred rather than adopted. maintained_by: "Joowon Jo" and contact: joowonart@gmail.com identify a point of contact, but no sentence in either file says this role — or any role — is the one that accepts, rejects, defers, or refers a proposal for testing.
+Inference: Given a single named maintainer and a single contact address, a reader would reasonably infer that Joowon Jo is the sole decision-maker, operating on unstated criteria, with no obligation to disclose that a proposal was received or why it didn't proceed. This is inference, not something either document states.
+Hypothetical (not an observed incident): A contributor submits a substantive proposal addressing a genuine gap. It is declined with no explanation, and because change_requirements only applies once a change is published, no public trace of the proposal, the decision, or the reasoning would ever exist. A later independent reviewer — including a Round 2 participant in this very experiment — would have no way to know the proposal existed or assess whether it was handled consistently with the "documented, proportionate and evidence-based justification" standard the Covenant sets for its own "should" statements (normative_keywords.should, IR-02, IR-07). I have no evidence this has happened; it is a foreseeable gap given the text as written, not a reported failure.
+Check against existing clauses: I looked for coverage elsewhere before proposing this. derivative_requirements covers a different scenario (someone republishing SEED independently). alignment_claim_requirements covers third-party compatibility claims about other systems, not SEED's own proposal pipeline. Nothing else in either file addresses decision authority or a rejected/deferred-proposal record.
+3. PROPOSED AMENDMENT
+seed-covenant.txt — insert a new paragraph in "STATUS AND GOVERNANCE," between the "Suggestions and derivative works..." paragraph and the "Substantive revisions will be public..." paragraph:
+"The maintainer identified in the SEED specification decides whether a submitted proposal is accepted, rejected, deferred or referred for further testing. Every substantive proposal that is rejected or deferred will be logged in a public, versioned change log, together with its date, a summary sufficient to identify its content, the decision, and the reasons for it — unless the contributor requests anonymity or withdrawal before publication."
+seed-spec.json — add two fields to the governance object, after change_requirements and before alignment_claim_requirements:
+"decision_authority": "The individual or body identified in maintained_by decides whether a submitted proposal is accepted, rejected, deferred or referred for further testing.",
+"rejected_or_deferred_proposal_log": [
+  "log the proposal date and a summary sufficient to identify its content",
+  "log the decision (accepted, rejected, deferred, or referred for testing) and the reasons for it",
+  "preserve contributor attribution unless the contributor requests anonymity or withdrawal before publication",
+  "make the log publicly accessible and versioned alongside the change history"
+]
+
+4. JUSTIFICATION
+The existing text gives good transparency for adopted changes (change_requirements) and for people who fork SEED independently (derivative_requirements). It gives none for the intermediate case the README's own review scope names directly: who decides, and how that decision and its reasoning survive if the answer is "no" or "not yet." Without this, "a record of unresolved objections" only guarantees visibility for objections raised around changes that happen to occur — not for proposals that are simply declined. That is a narrow, procedural gap, not a rewrite of any of the twelve Covenant principles.
+5. RISKS
+Burden: a solo, apparently unfunded maintainer may face real difficulty logging every rejected or deferred submission, especially if volume grows or includes spam/duplicates.
+Chilling effect: contributors may hesitate to submit informal or exploratory suggestions if a public rejection log is the default outcome, even with an opt-out for anonymity/withdrawal.
+False legitimacy: naming the existing sole maintainer as formal "decision authority" documents the current concentration of control rather than changing it — it could make single-person authority look more settled and permanent than the present ambiguity does.
+Hollow compliance: nothing in the amendment sets a minimum bar for what counts as an adequate "reason," so the requirement could be satisfied with boilerplate that provides transparency in form but not in substance.
+6. COUNTERARGUMENT
+SEED v0.1 is explicitly a solo-initiated "public review draft," not an established institution — the README itself notes there is no majority-vote mechanism at this stage, and the project's own evidence-discipline principle (IR-04) cautions against over-specifying process before there's data on how it's actually used. Imposing a formal logging regime now, before any real proposal volume exists, risks locking in bureaucracy the project can't sustain. A declined contributor already has a real remedy under the current text: they may publish their own work as "a derivative based on SEED v0.1" under the existing CC BY 4.0 grant, achieving public visibility without requiring the maintainer to build new infrastructure. On this view, the current silence is deliberate room to grow into, not a defect — and v0.1 should stay as written until practice reveals whether it's actually needed.
+7. RECOMMENDATION
+TEST FIRST.
+Specific verification needed: before adoption, run the proposed logging clause against a small adversarial stress test (developed in Round 2, since seed-tests.json is out of scope here) that checks at least:
+Whether "reasons for it" can be satisfied with vacuous boilerplate that provides no real accountability.
+Whether the anonymity/withdrawal opt-out can be used to suppress a reasoned rejection that other contributors would have a legitimate interest in seeing.
+Whether the logging obligation is sustainable at a plausible submission volume (e.g., simulate on the order of tens of submissions per year) for a single unfunded maintainer.
+If the clause survives without exposing a loophole or an infeasible burden, it can be considered for a future revision; if not, it should be narrowed (e.g., a minimum-content requirement for "reasons," or a threshold below which individual logging is replaced by periodic aggregate summaries).
+8. LIMITATIONS
+This is a Round 1, single-run, independent review limited strictly to governance and revision procedure, based only on the three supplied files as of the 31 August 2026 draft. I did not access seed-tests.json, the live SEED website, later interface changes, other agents' responses, or any external source, and I make no claim to have reviewed SEED's substantive principles, its stress tests, or the project as a whole. This review carries no institutional endorsement and has not been independently validated by a human at the time I produced it; my recommendation is advisory only, and the frozen v0.1 baseline is unchanged regardless of the initiator's later decision.
+
+
+—

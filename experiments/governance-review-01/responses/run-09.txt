@@ -1,0 +1,121 @@
+Meta AI 
+
+All three attached files were accessible and reviewed. No external sources, browsing, or seed-tests.json were used.
+
+### 1. TARGET
+
+**seed-covenant.txt - STATUS AND GOVERNANCE**
+
+> Suggestions and derivative works may be sent to joowonart@gmail.com. Submissions intended for incorporation into future project-maintained versions should identify the contributor and be made available under CC BY 4.0.
+
+> Substantive revisions will be public, versioned and accompanied by reasons, affected principle and test IDs, contributor attribution and a record of unresolved objections.
+
+> Changes that alter the meaning or application of SEED will not silently replace earlier versions. Previous versions will remain identifiable and accessible.
+
+**seed-spec.json - governance**
+
+Field: `governance.maintained_by`
+
+> "maintained_by": "Joowon Jo",
+
+Field: `governance.change_requirements`
+
+> "change_requirements": [
+>       "publish the changed text and version",
+>       "state reasons and evidence",
+>       "identify affected principle IDs",
+>       "retain accessible history",
+>       "update impacted stress tests",
+>       "record unresolved objections"
+>     ],
+
+Nearest relevant clause for omission: the above two sentences cover proposal receipt and revision publication, but no clause covers public recording of rejected, deferred, or test-first outcomes.
+
+### 2. PROBLEM
+
+**Documentary evidence:**
+
+- Proposal authority is described only as email submission: "Suggestions and derivative works may be sent to joowonart@gmail.com." There is no requirement to log receipt.
+- Decision authority is implied by `maintained_by: Joowon Jo` and the README note that the human initiator retains decision, but no decision procedure is defined for accept / reject / defer / test-first.
+- Preservation of reasons and objections is required only when a revision is published: "Substantive revisions will be public, versioned and accompanied by reasons, affected principle and test IDs, contributor attribution and a record of unresolved objections." The spec's `change_requirements` list omits "contributor attribution" entirely, creating a direct contradiction between the two baseline files, and also omits any requirement to publish reasons for non-adopted proposals.
+- Preservation of versions: "Previous versions will remain identifiable and accessible" and "retain accessible history" apply to published versions, not to a proposal history.
+
+**Inference:**
+
+The current text satisfies preservation for adopted changes, but leaves a gap for the full lifecycle of governance decisions. Objections to a rejected proposal, or reasons for rejection/deferral, have no mandated preservation, which weakens accountability for decision authority and for attribution/provenance.
+
+This is an absence in the documents, not evidence that the project has failed in practice in handling proposals.
+
+**Hypothetical scenario - explicitly labeled hypothetical:**
+
+Hypothetical: A contributor submits a substantive governance proposal to revise the revision procedure itself. The maintainer decides to reject it. Under v0.1 text, there is no requirement to publish that a proposal was received, who contributed it (with consent), why it was rejected, or what objections were raised. A later reviewer cannot reconstruct the decision trail.
+
+### 3. PROPOSED AMENDMENT
+
+One substantive governance amendment with corresponding changes in both files:
+
+**Part A - seed-covenant.txt, STATUS AND GOVERNANCE, immediately after the sentence "Substantive revisions will be public, versioned and accompanied by reasons, affected principle and test IDs, contributor attribution and a record of unresolved objections."**
+
+Add:
+
+> All substantive proposals received for consideration for the project-maintained version, whether adopted, rejected, deferred or marked for further testing, will be recorded in a public proposal decision log. Each entry will include date received, contributor attribution (subject to consent and privacy), affected principle and test IDs, decision outcome, reasons and evidence, and a record of unresolved objections. Previous versions of the decision log and of SEED will remain identifiable and accessible.
+
+**Part B - seed-spec.json, governance**
+
+Replace `change_requirements` with:
+
+> "change_requirements": [
+>       "publish the changed text and version",
+>       "state reasons and evidence",
+>       "identify affected principle IDs",
+>       "include contributor attribution (subject to consent)",
+>       "retain accessible history of versions and of the proposal decision log",
+>       "update impacted stress tests",
+>       "record unresolved objections and decision outcome for all substantive proposals, including rejected, deferred and test-first"
+>     ],
+
+Add new field in `governance`:
+
+> "proposal_decision_log_requirements": [
+>       "date received",
+>       "contributor attribution (subject to consent)",
+>       "affected principle and test IDs",
+>       "decision outcome (adopted / rejected / deferred / test-first)",
+>       "reasons and evidence",
+>       "record of unresolved objections",
+>       "retention of previous log versions"
+>     ]
+
+### 4. JUSTIFICATION
+
+Existing safeguards are insufficient for the scope defined in the review brief: proposal and decision authority; preservation of objections and decision reasons; attribution, provenance and contributor rights; preservation of versions and responsibility.
+
+- The covenant requires attribution and objection-recording only for published revisions. The spec's `change_requirements` does not even require attribution, contradicting the covenant and weakening contributor rights handling.
+- There is no mandated preservation of decision reasons for non-adopted outcomes. This means the full decision authority (single maintainer) operates without a required public accounting trail, which is in tension with SEED's own emphasis on accountable responsibility and on preventing silent replacement.
+- A public decision log directly extends the already-stated principles of versioning, reasons, and unresolved objections to all outcomes, rather than creating a new governance philosophy.
+
+### 5. RISKS
+
+- **Burden:** Maintaining a public log increases workload for a single maintainer, especially for spam or low-quality submissions. Requires definition of "substantive" to avoid log inflation.
+- **Privacy and consent:** Contributor attribution subject to consent creates ambiguity; contributors may request anonymity or later withdrawal, conflicting with CC BY 4.0 licensing expectation that submissions be made available under CC BY 4.0.
+- **Concentration:** Amendment does not dilute decision authority; it only requires transparency. It may create appearance of formal due process that still rests with one person, potentially concentrating legitimacy expectations without distributing power.
+- **Ambiguity:** Terms like "substantive proposal" and "record of unresolved objections" need operational definition to avoid selective logging.
+
+### 6. COUNTERARGUMENT
+
+Strongest argument for retaining v0.1 unchanged:
+
+SEED v0.1 is explicitly labeled "Public Review Draft" dated 31 August 2026, with voluntary adoption and `maintained_by: Joowon Jo`. For an early draft, lightweight governance is intentional to avoid premature bureaucracy. Requiring a public decision log for every rejected/deferred proposal imposes an open-ended commitment, potential privacy/GDPR handling, and an expectation of response to all submissions, which may deter experimentation. The current combination of CC BY 4.0 freedom to fork ("a derivative based on SEED v0.1"), retention of version history, and publication of reasons for adopted changes already provides core safeguards. The omission of attribution in `change_requirements` could be treated as editorial oversight rather than substantive gap, since the covenant text does require it. Therefore, NO CHANGE is defensible until there is observed practice showing lost proposals or contested decisions.
+
+### 7. RECOMMENDATION
+
+**ADOPT** - Recommend consideration for a future revision, not edit or authorization now. The proposal would not change the frozen v0.1 baseline. Acceptance would mean documenting a proposal decision log requirement and aligning covenant and spec on contributor attribution.
+
+If verification is preferred before adoption, TEST FIRST verification would be: review whether seed-tests.json or other Round 2 materials already impose decision-log expectations, and confirm that adding log requirements does not conflict with applicable privacy law for contributor data.
+
+### 8. LIMITATIONS
+
+- Review limited to three supplied files: seed-covenant.txt, seed-spec.json, README_EXPERIMENT.txt.md. No access to seed-tests.json, the live website at https://www.joowonjo.com/seed, later interface changes, other agents' responses, or external sources, per Round 1 scope.
+- No browsing, no external verification, no modification of files, no submission outside this conversation.
+- No assessment of how SEED has operated in practice; only documentary absence is evaluated.
+- No claim of institutional endorsement, independent human validation, or verified model identity/version.

@@ -1,0 +1,51 @@
+ChatGPT 5.5 High
+
+Here is the first review.
+1. TARGET
+File: seed-covenant.txtSection: STATUS AND GOVERNANCE
+Nearest relevant existing text:
+“SEED is an open, versioned proposal. The canonical project-maintained version is published and maintained at https://www.joowonjo.com/seed.” fileciteturn0file1L221-L223
+“Suggestions and derivative works may be sent to joowonart@gmail.com. Submissions intended for incorporation into future project-maintained versions should identify the contributor and be made available under CC BY 4.0.” fileciteturn0file1L229-L229
+“Substantive revisions will be public, versioned and accompanied by reasons, affected principle and test IDs, contributor attribution and a record of unresolved objections.” fileciteturn0file1L231-L231
+Corresponding JSON field: governance
+Nearest relevant existing fields:
+"maintained_by": "Joowon Jo" and "contact": "joowonart@gmail.com" fileciteturn0file2L551-L557
+"change_requirements": [ "publish the changed text and version", "state reasons and evidence", "identify affected principle IDs", "retain accessible history", "update impacted stress tests", "record unresolved objections" ] fileciteturn0file2L563-L570
+2. PROBLEM
+Documentary evidence: The Covenant says the canonical version is “published and maintained” at the project URL and that suggestions may be sent for possible incorporation. It also requires public, versioned substantive revisions with reasons, affected principle and test IDs, attribution and unresolved objections. fileciteturn0file1L221-L233 The specification identifies a maintainer and contact address, and lists requirements for changes. fileciteturn0file2L551-L570
+Inference: These clauses address proposal intake, attribution, revision publication, objections and version preservation, but they do not explicitly say who decides whether a submitted proposal is accepted, rejected, deferred or tested further. They also appear to require records mainly when a substantive revision occurs, not when a proposal is rejected, deferred or routed to testing.
+Hypothetical scenario: A contributor submits a governance objection that is not incorporated. Under the current text, the project could retain the official version unchanged without a clearly specified duty in the Covenant/specification to record the proposal’s disposition, the decision-maker or the reason for not adopting it. This is a hypothetical procedural gap, not evidence that the project has failed in practice.
+3. PROPOSED AMENDMENT
+One substantive governance amendment, with corresponding Covenant and JSON changes.
+A. Add to seed-covenant.txt, in STATUS AND GOVERNANCE, after the sentence ending “Submissions intended for incorporation into future project-maintained versions should identify the contributor and be made available under CC BY 4.0.”
+Proposed addition:
+“Proposal decisions for the project-maintained version are made by the identified maintainer unless a future version publicly names a different decision procedure. For each substantive proposal considered for incorporation, the project-maintained record should identify the proposal, contributor if provided, decision status, decision-maker, reasons, and any unresolved objections, including when the proposal is rejected, deferred or designated for further testing.”
+B. Add to seed-spec.json, inside governance, after "contact": "joowonart@gmail.com":
+"decision_authority": "Proposal decisions for the project-maintained version are made by the identified maintainer unless a future version publicly names a different decision procedure.",
+"proposal_record_requirements": [
+  "identify the proposal",
+  "identify the contributor if provided",
+  "record decision status as accepted, rejected, deferred or test-first",
+  "identify the decision-maker",
+  "state reasons and evidence",
+  "record unresolved objections",
+  "retain the record even when no substantive revision is adopted"
+],
+4. JUSTIFICATION
+Existing safeguards are meaningful but incomplete for this specific governance issue. The current Covenant already requires attribution, reasons, unresolved objections and version preservation for substantive revisions. fileciteturn0file1L229-L233 The specification likewise requires changed text/version, reasons and evidence, affected principle IDs, accessible history, updated impacted stress tests and unresolved objections. fileciteturn0file2L563-L570
+The insufficiency is that these safeguards are tied most clearly to adopted “substantive revisions” or “changes.” They do not clearly cover unadopted proposals, nor do they explicitly identify the decision authority for the project-maintained version. The README for this experiment makes agents advisory only and says a proposed amendment does not alter v0.1; any substantive change must be separately reviewed, documented and considered for a future revision. fileciteturn0file0L24-L30 But the README is an experimental condition, not itself the Covenant/specification governance baseline.
+The amendment would preserve human responsibility and project maintainership while reducing ambiguity about proposal disposition and revision accountability.
+5. RISKS
+The amendment could introduce administrative burden by requiring records for substantive proposals that are not adopted. It could also concentrate authority more visibly in the identified maintainer by making that role explicit, though the specification already names Joowon Jo as maintainer. fileciteturn0file2L551-L557
+The phrase “substantive proposal considered for incorporation” may itself need interpretation. If read too broadly, it could require recording every informal suggestion. If read too narrowly, important rejected objections might still disappear from the record.
+6. COUNTERARGUMENT
+The strongest argument against the amendment is that v0.1 already contains enough safeguards for a public review draft. It identifies a maintainer and contact point, permits suggestions and derivative works, requires contributor attribution for incorporation, requires public versioned substantive revisions with reasons and unresolved objections, and prevents silent replacement of earlier versions. fileciteturn0file1L221-L233 The JSON governance field also already requires accessible history and unresolved objection records. fileciteturn0file2L563-L570
+Adding a formal proposal-disposition process at v0.1 may over-proceduralize an early public draft and create expectations the project is not yet prepared to administer.
+7. RECOMMENDATION
+ADOPT
+This means recommend consideration for a future revision only. It does not edit, authorize or alter the frozen v0.1 baseline.
+8. LIMITATIONS
+This review is limited to the three supplied files: seed-covenant.txt, seed-spec.json and README_EXPERIMENT.txt.md. The README states that the Covenant and specification are the frozen authoritative baseline for this experiment, and that seed-tests.json is intentionally excluded from Round 1. fileciteturn0file0L13-L20
+I did not review seed-tests.json, the current SEED website, later interface changes, other agents’ responses or external sources. The README also limits Round 1 to governance and revision procedure rather than substantive stress-testing of individual Covenant principles. fileciteturn0file0L18-L20 This review is advisory and does not claim institutional endorsement, independent human validation or authority to modify SEED v0.1.
+
+—--

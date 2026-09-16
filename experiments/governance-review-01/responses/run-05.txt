@@ -1,0 +1,63 @@
+ChatGPT 5.6 sol High
+
+Review completed using only the three supplied files. I found one documentary governance gap that, in my assessment, justifies a single prospective amendment.
+1. TARGET
+Affected baseline locations:
+seed-covenant.txt — “STATUS AND GOVERNANCE”
+Nearest relevant clauses:
+“Suggestions and derivative works may be sent to joowonart@gmail.com. Submissions intended for incorporation into future project-maintained versions should identify the contributor and be made available under CC BY 4.0.”
+“Substantive revisions will be public, versioned and accompanied by reasons, affected principle and test IDs, contributor attribution and a record of unresolved objections.”
+“Changes that alter the meaning or application of SEED will not silently replace earlier versions. Previous versions will remain identifiable and accessible.” fileciteturn1file0L19-L23
+seed-spec.json — governance.change_requirements
+Current field:
+"change_requirements": ["publish the changed text and version","state reasons and evidence","identify affected principle IDs","retain accessible history","update impacted stress tests","record unresolved objections"] fileciteturn1file1L54-L61
+The proposed amendment concerns an omission: neither baseline document expressly requires a durable decision record for proposals that are rejected, deferred, or sent for further testing, as opposed to proposals that become substantive revisions.
+2. PROBLEM
+Documentary evidence. The Covenant provides strong preservation requirements for substantive revisions: reasons, contributor attribution, unresolved objections, versioning and continued accessibility of earlier versions. fileciteturn1file0L19-L23 The specification likewise requires changed text and version, reasons and evidence, accessible history, updated tests and unresolved objections. fileciteturn1file1L54-L61
+The experimental README separately identifies acceptance, rejection, deferral and further testing as possible decisions, and asks how “objections, disagreements and reasons for decisions are preserved.” fileciteturn1file2L102-L108 For every experimental run, it also requires preservation of the “initiator's later decision and reasoning.” fileciteturn1file2L144-L159
+Inference. The baseline provisions are phrased around substantive revisions and changes. They therefore do not expressly establish equivalent preservation requirements when a proposal does not result in a change. The README supplies that safeguard for this experiment, but the README explicitly defines only seed-covenant.txt and seed-spec.json as the frozen authoritative baseline. fileciteturn1file2L81-L88
+This creates a provenance gap: the baseline can preserve why an adopted change occurred while leaving unspecified whether the reasons, objections and responsible decision-maker behind a rejected or deferred proposal must remain identifiable.
+This is an absence in the supplied documents. It is not evidence that SEED has actually discarded, concealed or inadequately recorded any proposal or decision in practice.
+Hypothetical scenario: a contributor submits a governance proposal; the maintainer defers it because evidence is insufficient. Under the baseline text, no clause expressly requires the proposal, the deferral, the responsible decision-maker, the reasons or unresolved objections to remain in an accessible decision history. If the same issue later reappeared, readers might be unable to reconstruct why it was previously deferred. This scenario is hypothetical, not an observed incident.
+3. PROPOSED AMENDMENT
+One substantive governance amendment, implemented correspondingly in both baseline files.
+In seed-covenant.txt, STATUS AND GOVERNANCE, immediately after the sentence concerning submissions intended for incorporation, add:
+“For each proposal for incorporation into a project-maintained version that receives a formal decision, preserve an identifiable decision record stating the SEED version considered, the proposal or a stable reference to it, the decision (accepted, rejected, deferred or requiring further testing), the responsible decision-maker, the reasons for the decision, contributor attribution where applicable and any unresolved objections. Information may be withheld where necessary for legal, privacy or safety reasons, but the fact and reason for the omission should be recorded.”
+In seed-spec.json, within governance, add:
+"proposal_decision_record_requirements": [
+  "SEED version considered",
+  "proposal text or stable reference",
+  "decision: accepted, rejected, deferred or further testing",
+  "responsible decision-maker",
+  "decision reasons",
+  "contributor attribution where applicable",
+  "unresolved objections",
+  "record justified legal, privacy or safety omissions"
+],
+These are two representations of the same amendment, not separate amendments.
+4. JUSTIFICATION
+Existing safeguards are substantial but do not fully address the concern.
+The Covenant already establishes contributor identification for incorporation submissions, attribution for substantive revisions, reasons for revisions, preservation of unresolved objections and continued availability of earlier versions. fileciteturn1file0L19-L23 The specification similarly requires reasons, accessible history and unresolved objections for changes. fileciteturn1file1L54-L61 Those provisions should therefore not be duplicated or replaced.
+The narrower missing safeguard is preservation of the decision path when no revision results. A rejected or deferred proposal can be relevant to governance provenance just as an accepted proposal is: it can show which issue was considered, what evidence was regarded as insufficient, which objections remained, and who was responsible for the decision.
+The experimental README demonstrates a closely related recordkeeping model by requiring the initiator's eventual decision and reasoning to be preserved for every run. fileciteturn1file2L144-L159 But because that requirement belongs to this experiment rather than the frozen Covenant/specification baseline, it does not resolve the baseline omission.
+The amendment does not change any Covenant principle, give artificial agents decision authority, or alter the frozen v0.1 baseline. It adds prospective procedural provenance for future revision decisions.
+5. RISKS
+The amendment could create administrative burden, especially if “formal decision” is not operationally defined. A large number of low-quality or repetitive submissions could make comprehensive recordkeeping disproportionate.
+Publishing rejected proposals and attribution could also create privacy, harassment, intellectual-property or safety concerns. The proposed exception attempts to limit that risk, but phrases such as “where necessary” and “stable reference” would themselves require consistent interpretation.
+Recording the “responsible decision-maker” improves accountability but may also make an existing concentration of decision responsibility more visible without resolving whether that concentration is desirable. The amendment intentionally does not redistribute decision authority, because the supplied materials do not establish an alternative governance body or decision mechanism.
+Finally, a decision log could be mistaken for a requirement to provide extensive deliberative records. The proposed text requires reasons and unresolved objections, not disclosure of every private discussion.
+6. COUNTERARGUMENT
+The strongest case for retaining v0.1 unchanged is that its existing safeguards may already be proportionate to the maturity of an “open, versioned proposal.” The baseline preserves the information with the greatest continuing normative significance: the content and rationale of changes that actually enter project-maintained versions, contributor attribution, unresolved objections and earlier versions. fileciteturn1file0L13-L23
+Requiring permanent records for unsuccessful proposals could impose process disproportionate to an early public-review draft, invite disputes over which informal suggestions count as proposals, and create publication or moderation burdens. Moreover, the present governance experiment already requires the initiator's decision and reasoning to be preserved, so the immediate review process does not depend on this amendment. fileciteturn1file2L144-L159
+On that view, experience with actual revision proposals could first show whether rejected or deferred decisions genuinely need a formal public record before the baseline acquires another governance requirement.
+7. RECOMMENDATION
+ADOPT
+Recommend consideration of this amendment for a future revision.
+The reason for ADOPT rather than TEST FIRST is that the identified issue is a textual omission that can be established directly from the frozen documents: adopted changes receive explicit provenance safeguards, while equivalent preservation for formally rejected, deferred or further-testing decisions is not stated. No claim about an observed governance failure is required to establish that difference.
+This recommendation is advisory only and does not edit, authorize or alter SEED v0.1.
+8. LIMITATIONS
+This review examined only the three supplied files: seed-covenant.txt, seed-spec.json, and README_EXPERIMENT.txt.md. The Covenant and specification were treated as the frozen authoritative baseline, consistent with the experimental README. fileciteturn1file2L81-L88
+seed-tests.json was intentionally excluded from Round 1, and I did not review or make claims about its contents. The README states that its exclusion reflects this round's restriction to governance and revision procedure rather than substantive stress-testing of individual principles. fileciteturn1file2L81-L88
+I did not consult the current SEED website, linked sources, external material, other agents' responses or any other part of the SEED project. Accordingly, this review cannot establish how governance has operated in practice, whether additional unpublished procedures exist, or whether any hypothetical failure described above has occurred.
+The review does not constitute institutional endorsement, legal review, independent human validation or evidence of consensus. It makes no claim to have reviewed the entire SEED project or to independently verify model/service identity or version information.
+—---

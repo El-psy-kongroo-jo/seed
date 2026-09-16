@@ -1,0 +1,65 @@
+ChatGPT 6 Astra High
+
+1. TARGET
+seed-covenant.txt — “STATUS AND GOVERNANCE”, particularly:
+Suggestions and derivative works may be sent to joowonart@gmail.com. Submissions intended for incorporation into future project-maintained versions should identify the contributor and be made available under CC BY 4.0.
+Substantive revisions will be public, versioned and accompanied by reasons, affected principle and test IDs, contributor attribution and a record of unresolved objections.
+Changes that alter the meaning or application of SEED will not silently replace earlier versions. Previous versions will remain identifiable and accessible.
+seed-spec.json — governance.maintained_by:
+"maintained_by": "Joowon Jo"
+seed-spec.json — governance.change_requirements:
+"change_requirements": [
+  "publish the changed text and version",
+  "state reasons and evidence",
+  "identify affected principle IDs",
+  "retain accessible history",
+  "update impacted stress tests",
+  "record unresolved objections"
+]
+The omission concerns records of proposal decisions that produce no revision.
+A relevant existing safeguard is README_EXPERIMENT.txt.md — “RECORD”, which requires:
+For every run, preserve:
+including:
+• initiator's later decision and reasoning.
+2. PROBLEM
+Documentary evidence: The Covenant attaches its explicit publication and objection-record requirements to “Substantive revisions.” The specification places corresponding duties under change_requirements. Neither explicitly requires a lasting decision record when a proposal is rejected, deferred or assigned further testing without changing the text.
+The README does require preservation of the initiator’s decision and reasoning for this experiment. Consequently, it would be incorrect to claim that Round 1 lacks a decision-record requirement. Its wording does not, however, establish an ongoing baseline procedure for proposals outside the experiment.
+Inference: The baseline leaves unclear whether preserving revision history also requires preserving decisions to leave that history unchanged. This matters because a rejected objection can explain a retained provision as much as an accepted proposal explains a revision.
+Hypothetical scenario—not an observed incident: A future proposal identifies a governance ambiguity. The maintainer rejects it, and no revision occurs. The documents do not clearly establish that the rejection, reasons and outstanding objection must remain accessible. A later reviewer could therefore encounter the same ambiguity without knowing why it was retained.
+This is a documentary gap, not evidence that SEED has discarded objections or mishandled an actual submission.
+3. PROPOSED AMENDMENT
+One amendment: extend decision-record preservation to substantive proposals decided without a resulting revision.
+Covenant: Insert the following paragraph in “STATUS AND GOVERNANCE,” immediately after the paragraph beginning “Substantive revisions will be public”:
+Whenever the project maintainer decides to accept, reject, defer or require further testing of a substantive revision proposal, the maintainer must publish and retain an accessible decision record. The record must identify the proposal and baseline version, preserve the proposal text and supplied contributor attribution, and state the decision, date, responsible human decision-maker, reasons and unresolved objections raised during its consideration. It must identify any resulting revision when published. Later decisions and corrections must remain traceable without silently replacing earlier records. Private or sensitive material may be withheld from the public record, with the fact and reason for withholding recorded and a non-sensitive summary provided where possible. Recording acceptance does not itself amend a published version.
+Specification: Add governance.proposal_decision_record as a string whose value is exactly the paragraph above. Retain the existing governance.change_requirements.
+These are corresponding expressions of the same amendment. No individual Covenant principle is changed.
+4. JUSTIFICATION
+Existing safeguards already address several concerns adequately for this narrow review:
+Submissions have an identified contact and stated contributor-identification and licensing expectations.
+Derivatives must identify modifications, credit the source and license, and avoid implied endorsement.
+Substantive revisions require attribution, reasons and unresolved-objection records.
+Earlier versions must remain identifiable and accessible.
+The experiment preserves first responses and later decision reasoning, while making agents advisory participants.
+The amendment therefore does not introduce a competing decision body or replace these safeguards. It extends an existing preservation approach to decisions that leave the published text unchanged.
+The specification’s IR-03 requires attributable responsibility, and operational requirement O04 calls for documenting material decisions. Those general safeguards support the amendment’s purpose, but do not explicitly define proposal-decision records or their preservation.
+The amendment identifies responsibility for each decision while leaving the human initiator’s decision authority intact.
+5. RISKS
+Maintaining public records creates administrative work, particularly for numerous or repetitive proposals. “Substantive” remains a judgment that the maintainer could apply inconsistently.
+Preserving submissions also creates privacy and attribution burdens. The withholding provision reduces disclosure risk but gives the maintainer discretion over what readers can inspect.
+The amendment records decisions actually made; it does not require every incoming suggestion to receive a decision or set a response deadline. Unconsidered submissions could therefore remain outside the record.
+Finally, visible records may suggest greater procedural legitimacy than they establish. Documentation alone provides neither independent review nor an appeal mechanism.
+6. COUNTERARGUMENT
+The strongest argument for retaining v0.1 unchanged is proportionality. SEED is an early, voluntary public proposal with an identified maintainer, derivative freedoms and explicit revision-history safeguards. The README already supplies decision recording for the present experiment.
+The existing obligation to “retain accessible history” could also be interpreted broadly enough to include proposal decisions. A separate mandatory public-record rule may formalize that interpretation at an unnecessary cost, discourage candid submissions or divert effort from substantive review. No supplied evidence shows that the current approach has failed.
+Nevertheless, the difference between recording changed text and recording decisions that produce no change is sufficiently consequential to justify making the requirement explicit.
+7. RECOMMENDATION
+ADOPT
+Recommend consideration of this single amendment for a future revision. This is advisory: the human initiator retains the decision. Acceptance of this recommendation would not alter the frozen v0.1 baseline.
+8. LIMITATIONS
+All three supplied files were accessible and read. This review used only those materials and examined governance and revision procedure.
+seed-tests.json was intentionally excluded and was not reviewed. No websites, linked materials, external sources or other agents’ responses were consulted. References within the documents were not independently verified.
+This review does not establish actual project practices, licensing compliance, institutional endorsement or independent human validation. It does not assess the entire SEED project. No files were modified, and nothing was submitted outside this conversation.
+Review date: 16 September 2026. Service context: Codex. No independently verified model name or version is asserted.
+
+
+—-
