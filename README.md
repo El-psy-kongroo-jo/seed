@@ -2,7 +2,7 @@
 
 **Shared Intelligence for Possible Futures**
 
-SEED is an open proposal for coexistence between human and artificial intelligence, initiated by Joowon Jo.
+SEED is an open art project and proposal for coexistence between human and artificial intelligence, initiated by Joowon Jo. See [About the work](ABOUT-THE-WORK.md).
 
 > Intelligence must expand possible lives, not monopolize them.
 
@@ -31,6 +31,8 @@ SEED is not law, certification or institutional consensus. Its reference assessm
 ## Experiments
 
 [Governance Under Review / 01](experiments/governance-review-01/README.md) collects nine AI responses, their disagreements and limitations, and the initiator's decision to pilot reason recording. Other proposals remain under review. This experiment does not revise the frozen v0.1 baseline or tag.
+
+[SEED in Practice / 01 — Multi-Model Stress Test](experiments/multi-model-stress-test-01/README.md) archives a five-case pilot in which three AI models assessed stress tests before and after seeing SEED's reference judgments. Seven of fifteen judgments were revised, all toward the reference; two disagreements remain. It is a small pilot, not a ranking or proof that the reference is correct.
 
 ## License and attribution
 
