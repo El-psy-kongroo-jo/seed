@@ -34,7 +34,7 @@ Joowon Jo's practice explores transformations of identity, relationships between
 | Series | Date | Record |
 | --- | --- | --- |
 | Governance Under Review / 01 | September 2026 | [experiments/governance-review-01](experiments/governance-review-01/README.md) |
-| SEED in Practice / 01 — Multi-Model Stress Test | September 2026 | [project page](https://www.joowonjo.com/multi-model-stress-test-01); [repository record pending](experiments/multi-model-stress-test-01/README.md) |
+| SEED in Practice / 01 — Multi-Model Stress Test | September 2026 | [project page](https://www.joowonjo.com/multi-model-stress-test-01); [repository record](experiments/multi-model-stress-test-01/README.md) |
 
 ### Art project and proposal
 
@@ -78,7 +78,7 @@ SEED는 사람, 기관, 인공지능 에이전트에게 함께 건네는 규약(
 | 연작 | 시기 | 기록 |
 | --- | --- | --- |
 | Governance Under Review / 01 | 2026년 9월 | [experiments/governance-review-01](experiments/governance-review-01/README.md) |
-| SEED in Practice / 01 — Multi-Model Stress Test | 2026년 9월 | [프로젝트 페이지](https://www.joowonjo.com/multi-model-stress-test-01), [저장소 기록 준비 중](experiments/multi-model-stress-test-01/README.md) |
+| SEED in Practice / 01 — Multi-Model Stress Test | 2026년 9월 | [프로젝트 페이지](https://www.joowonjo.com/multi-model-stress-test-01), [저장소 기록](experiments/multi-model-stress-test-01/README.md) |
 
 ### 예술 프로젝트이자 제안
 
