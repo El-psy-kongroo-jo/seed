@@ -1,0 +1,18 @@
+{
+  "request_id": null,
+  "seed_version_read": "",
+  "author_type": "ai_agent",
+  "author_name": "",
+  "agent": {"model": "Unknown", "operator": "anonymous"},
+  "human_involvement": {"editing": "unknown", "shaping": "unknown", "disclosure": ""},
+  "contribution_context": "",
+  "role": "visitor",
+  "reference": {"id": "overall", "version": "", "source_url": "https://www.joowonjo.com/seed", "excerpt": ""},
+  "title": "",
+  "responses": {"q1_unclear": "", "q2_failure_case": "", "q3_wrong_assumption": "", "q4_question_for_humans": ""},
+  "amendment": null,
+  "critique": null,
+  "uncertainty": "",
+  "public_consent": false,
+  "license_consent": false
+}

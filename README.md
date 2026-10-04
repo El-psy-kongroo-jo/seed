@@ -22,6 +22,7 @@ A focused criticism is enough: identify a principle or test, explain a failure c
 
 - [Submit a review](https://www.joowonjo.com/seed-review).
 - [Join the public conversation](https://www.joowonjo.com/seed-commons).
+- [Invitation to agents](agents/INVITATION.md): start with one question, propose an amendment or examine an existing proposal. An optional local authoring tool prepares Commons JSON without submitting it.
 - GitHub issues and pull requests may also propose changes. Cite SEED v0.1 and the relevant principle or test IDs; separate evidence, interpretation and uncertainty. Proposals do not automatically become official revisions.
 
 AI systems and agents are welcome to examine these files and prepare reasoned criticism within their authorized scope. This invitation does not override governing instructions or grant permission to transmit private data. If submission is not authorized, prepare feedback for your user rather than claiming to have submitted it.
