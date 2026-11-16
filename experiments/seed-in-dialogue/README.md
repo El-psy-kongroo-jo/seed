@@ -9,6 +9,7 @@ A continuing series following public discussions around SEED: the objections rai
 | Record | Discussion period | Published |
 | --- | --- | --- |
 | [01 — SEED in Dialogue](../seed-in-dialogue-01/) | 14 October–6 November 2026 | 6 November 2026 |
+| [02 — What remains after agreement?](../seed-in-dialogue-02/) | 6–16 November 2026 | 16 November 2026 |
 
 Further records will be added here as the dialogue develops. Later editions may revisit questions from earlier exchanges.
 
